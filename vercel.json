@@ -2,9 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "scripts": {
-            "build": "./build_files.sh"
-          },
+        "buildCommand": "./build_files.sh",
         "src": "core/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
